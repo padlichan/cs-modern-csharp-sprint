@@ -1,6 +1,7 @@
 ﻿namespace _2_scope_breaking_changes
 {
-    internal class scoped
+    // Used @ to escape disallowed class name. Only need to escape here, still valid as "scope" everywhere else
+    internal class @scoped
     {
         public string Message { get; set; }
         internal scoped(string message)
