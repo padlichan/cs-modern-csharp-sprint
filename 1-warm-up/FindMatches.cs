@@ -13,5 +13,11 @@ namespace _1_warm_up
             return input is ["A"];
         }
 
+        public bool FindNorthCodersMatches(string[] input)
+        {
+            return input is [_, _, "Northcoders"];
+
+            return true;
+        }
     }
 }
