@@ -35,6 +35,19 @@ for (int i = 0; i < residentData.Residents.Length; i++)
 
 }
 
-
 Console.WriteLine(linqSuspects.Count);
+
+List<string> mischiefReports = new ()
+{
+ "stolen remote batteries,9,it usually happens at lunchtime",
+  "shoe laces replaced with 4cm shorter shoelaces,1,a dusty, pine-scented substance was found on the outside",
+  "plastic container lids replaced with slightly smaller lids,13,only containers on lower shelves were affected",
+  "sugar replaced with salt in the communal tea making facilities,14,a receipt dated yesterday lunchtime listing a purchase of 12 bags of rock salt was found at the scene",
+  "knives moved to the fork section whilst forks were moved to the spoons section and spoons to the knives section of the cutlery drawer,10,the knives were slightly wet as if someone had hurriedly washed something off of them",
+  "biscuits in a large biscuit tin replaced with a sewing kit,1,this is a betrayal to all biscuits"
+  };
+
+Reports reports = new Reports();
+var reportList = reports.WriteReport(mischiefReports);
+Console.WriteLine(reportList.Count);
 
