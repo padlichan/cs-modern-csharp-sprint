@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using _1_warm_up;
+using ScoreTuple = (string, string, int);
 
 Console.WriteLine("Hello, World!");
 /*
@@ -28,3 +29,10 @@ int[][] emptyNestedArray = [];
 
 Console.WriteLine(myMatches.CountSpecificArrays(nestedArrays));
 Console.WriteLine(myMatches.CountSpecificArrays(emptyNestedArray));
+
+Participant part = new("Jim", "Place");
+
+ScoreTuple scoreTuple = part.getScore();
+Console.WriteLine(part.Name);
+
+Console.WriteLine(scoreTuple);
