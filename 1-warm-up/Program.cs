@@ -22,3 +22,9 @@ string[] testArray3 = { "I", "study", "with", "Northcoders" }; //no match
 Console.WriteLine(myMatches.FindNorthCodersMatches(testArray1));
 Console.WriteLine(myMatches.FindNorthCodersMatches(testArray2));
 Console.WriteLine(myMatches.FindNorthCodersMatches(testArray3));
+
+int[][] nestedArrays = [[3],[4,3],[5,2,7],[4,2,7],[3,5,4],[4,5,5,5,3]];
+int[][] emptyNestedArray = [];
+
+Console.WriteLine(myMatches.CountSpecificArrays(nestedArrays));
+Console.WriteLine(myMatches.CountSpecificArrays(emptyNestedArray));

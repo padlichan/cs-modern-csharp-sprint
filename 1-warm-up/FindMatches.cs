@@ -16,8 +16,18 @@ namespace _1_warm_up
         public bool FindNorthCodersMatches(string[] input)
         {
             return input is [_, _, "Northcoders"];
+        }
 
-            return true;
+        public int CountSpecificArrays(int[][] jaggedArray)
+        {
+            //return jaggedArray.Count(x => x is [4, ..] && x.Contains(3));
+
+            int matches = 0;
+            foreach (var array in jaggedArray)
+            {
+                if (array is [4, ..] && array.Contains(3)) matches++;
+            }
+            return matches;
         }
     }
 }
